@@ -52,8 +52,8 @@ let AktiveFaellestoreBezirk;
 
 //Db Offline Data
 //let loadbool =true;      
-var db; 
-var request = window.indexedDB.open("alleBezirksDaten",1); 
+//var db; 
+//var request = window.indexedDB.open("alleBezirksDaten",1); 
 // var meineDatenAAF = []; //Alle Aktive Fälle jedes Datums des Gewählten Bezirks
 // var meineDatenAEW = [];
 // var meineDatenAF = [];
@@ -1062,7 +1062,7 @@ if (!window.indexedDB) {
 }
 
 //Öffne DB Zugriff
- request = window.indexedDB.open("alleBezirksDaten",1);
+ //request = window.indexedDB.open("alleBezirksDaten",1);
 
         
 
@@ -1095,7 +1095,7 @@ var itemsRequest = objectStore.getAll();
  
 //ON ERROR
      request.onerror = function(event) {   
-        console.error("Database error: " + event.target.errorCode);
+        //console.error("Database error: " + event.target.errorCode);
         };
 //ON UPRADE
         request.onupgradeneeded = function(event) {

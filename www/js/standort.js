@@ -714,8 +714,8 @@ function myLocation() {
   //Standort abfragen
      readUserLocation();
   ////  
-
     document.getElementById("standortText").style.display= "block";
+    document.getElementById("standortText").innerHTML= "derzeitiger Standort";
    
     }else if (connBool == false){
       read_from_local_storage();
@@ -726,6 +726,7 @@ function myLocation() {
     //  // downloadBezirksFile(pathBezirke2);
     //  checkAvailableDatabase();
     //   }
+
 
        bezirk = lokalstorageBezirk;
        localStorage.setItem("storeBezirk", bezirk);
@@ -741,6 +742,7 @@ function myLocation() {
     // if(lokalstorageBezirk != null){
     //   downloadLokation();
     //   }
+
       document.getElementById("bezirk").innerHTML = bezirk;
 
     localStorage.setItem("storeToggleFalse", false);

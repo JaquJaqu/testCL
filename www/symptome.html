@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="img/Logo_CovidLux.png">
+        <title>CovidLux</title>
+        <script src="js/jquery.min.js"></script>
+    </head>
+    <body ononline="onOnline()" onoffline="onOffline()">
+
+        <div id="scrollbar">
+
+        <header>
+            <div class="flex_menu">
+            <div class="info">
+                <a href="info.html" onclick="saveHistory()"><img alt="Informationen" src="img/info.png" width="25vw" height="25vw"></a>
+            </div>
+            <h1>Symptome</h1>
+            <div class="einstellungen">
+                <a href="einstellungen.html" onclick="saveHistory()"><img alt="Einstellungen" src="img/settings.png" width="25vw" height="25vw"></a>
+            </div> 
+            </div>
+        </header>
+
+        <div class="ro"><img src="img/rechts_oben.png" width="175vh"></div>
+        <div class="lu"><img src="img/links_unten.png" width="175vh"></div>
+
+        <div id="unterstatus"></div>
+        <div id="status"></div>
+
+        <div id=overlay>
+            <div id="overlay_flex">
+                <button id="overlay_x" onclick="endOverlay()"><img src="img/X3_leer_grau.svg" alt="schließen" width="35vw"></button>
+                <img src="img/notruf.png" alt="Telefonhörer mit Sprechblase" id="overlay_img" width="100vw" height="100vh">
+            <p>Solltest du die beschriebenen Krankheitssymptome aufweisen, bleibe bitte zu Hause und kontaktiere
+                die 24h-Hotline <b><a href="tel:1450" class="number">1450</a></b> !
+            </p>
+            <p>Solltest du allgemeine Fragen zum Corona Virus haben, kannst du dich an die Infoline 
+                <b><a href="tel:+43-800-555621" class="number">0800 555 621</a></b> (täglich von 7:00 bis 20:00) wenden. Hier wird dir gerne eine Auskunft gegeben.
+            </p>
+        </div>
+        </div>
+            
+            <div id="mainwrapper_symptome">
+                <div id="Akkordeon">
+                <button class="accordion">Die häufigsten Symptome</button>
+                <div class="panel">
+                    <div class="panel_links">
+                        <h2>Häufige Symptome</h2>
+                        <ul>
+                            <li>Fieber</li>
+                            <li>Trockener Husten</li>
+                            <li>Müdigkeit</li>
+                        </ul>
+                    </div>
+                    <div class="panel_rechts">
+                        <img src="img/fever.png" alt="Person mit Fibertheromometer" width="80vw" height="80vh">
+                    </div>
+                </div>
+                
+                <button class="accordion">Seltenere Symptome</button>
+                <div class="panel">
+                    <div class="panel_links">
+                        <h2>Seltene Symptome</h2>
+                        <ul>
+                            <li>Gliederschmerzen</li>
+                            <li>Halsschmerzen</li>
+                            <li>Kopfschmerzen</li>
+                            <li>Verlust des Geschmacks- oder Geruchssinns</li>
+                        </ul>
+                    </div>
+                    <div class="panel_rechts">
+                        <img src="img/kopfschmerzen.png" alt="Person mit Kopfschmerzen" width="80vw" height="80vh">
+                    </div>
+                </div>
+                
+                <button class="accordion">Schwere Symptome</button>
+                <div class="panel">
+                    <div class="panel_links">
+                        <h2>Schwere Symptome</h2>
+                        <ul>
+                            <li>Atembeschwerden</li>
+                            <li>Kurzatmigkeit</li>
+                            <li>Schmerzen im Brustbereich</li>
+                            <li>Verlust der Sprach- oder Bewegungsfähigkeit</li>
+                        </ul>
+                    </div>
+                    <div class="panel_rechts">
+                        <img src="img/lunge.png" alt="kranke Lunge" width="80vw" height="80vh">
+                    </div>
+                </div>     
+        
+                <p id="DataSymptome">Datenquelle: <a href="https://www.who.int/" target="_blank" id="Quelle">who.int</a> <span id="stand_who">(Stand: 11.01.2021 11:00)</span></p>
+                
+
+                
+                </div>
+                <h1 id="Wastun" onclick="startOverlay()">Ich glaube ich bin infiziert. Was nun?</h1>
+            </div>   
+            
+
+
+            <footer>
+                
+                <nav>
+                    <ul>
+                        <li>
+                            <div class="nav_element">
+                                <a href="start.html" class="nav_element"><img alt="Start" src="img/home_grau.svg" width="30vw" height="30vw">Start</a>
+                               </div>                 
+                           </li>
+                           <li>
+                               <div class="nav_element">
+                                <a href="dashboard_bezirk.html" class="nav_element"><img alt="Zahlen" src="img/statistics_grau.svg" width="30vw" height="30vw">Zahlen</a>
+                               </div>
+                           </li>
+                           <li>
+                               <div class="nav_element">
+                                <a href="tipps.html" class="nav_element"><img alt="Tipps" src="img/maske_grau.svg" width="30vw" height="30vw">Tipps</a>
+                               </div>
+                           </li>
+                           <li>
+                               <div class="nav_element">
+                                <div id="RectSymptome"></div>
+                                <a href="symptome.html" class="nav_element"><img alt="Symptome" src="img/fieber_blau.svg" width="30vw" height="30vw"><span class="aktiv">Symptome</span></a>
+                               </div>
+                            
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+
+
+        <script src="cordova.js"></script> 
+        <script src="js/functions.js"></script>
+        <script src="js/symptome.js"></script>
+       
+        </div>
+    </body>
+</html>

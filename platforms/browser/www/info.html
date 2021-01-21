@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="img/Logo_CovidLux.png">
+        <title>CovidLux</title>
+        <script src="js/jquery.min.js"></script> 
+    </head>
+    <body onload="onload_info()" ononline="onOnline()" onoffline="onOffline()">
+
+        <div id="scrollbar">
+
+        <header>
+            <div class="flex_menu">
+            <div class="info">
+                <a id="back2"><img alt="Zurück" src="img/back.png" width="25vw" height="25vw"></a>
+            </div>
+            <h1>Wie funktioniert es?</h1>
+            <div></div>
+        </div>
+        </header>
+
+        <div id="unterstatus"></div>
+        <div id="status"></div>
+                <div id="blockWieGesamt">
+                    <div class="blockWie">
+                        <div class="flexboxwie">
+                            <div class="flexboxwietext">
+                                <h3>Startseite</h3>
+                                <p class="textInfobutton">Auf der Startseite findest du die aktuelle 
+                                    Ampelfarbe basierend auf deinem Standort. Außerdem hast du die 
+                                    Möglichkeit dir die Ampelfarben anderer Bezirke anzeigen zu lassen. 
+                                    Du kannst aber auch einen Bezirk aus der Liste wählen, ohne deinen 
+                                    Standort freigeben zu müssen.</p>
+                            </div>
+                            <div class="flexboxwiebild">
+                                <img alt="Ampel" src="img/ampel.png" width="80vw" height="80vw">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blockWie">
+                        <div class="flexboxwie">
+                            <div class="flexboxwietext">
+                                <h3>Zahlen</h3>
+                                <p class="textInfobutton">Auf der Seite “Zahlen” findest du die wichtigsten 
+                                    Kennzahlen zum Coronavirus. Basierend auf deinem Standort werden dir 
+                                    hier die aktiven Fälle, Neuerkrankungen und Todesfälle angezeigt. Du 
+                                    hast auch hier die Möglichkeit andere Bezirke oder Bundesländer aus 
+                                    der Liste zu wählen. Die Seite “Zahlen” unterscheidet zwischen Zahlen 
+                                    für den Bezirk, das Bundesland oder gesamt Österreich. Klickst du auf 
+                                    eine der drei Kennzahlen, kommst du zu einer interaktiven Grafik.</p>
+                            </div>
+                            <div class="flexboxwiebild">
+                                <img alt="Diagramm" src="img/graph-bar.png" width="80vw" height="80vw">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blockWie">
+                        <div class="flexboxwie">
+                            <div class="flexboxwietext">
+                                <h3>Tipps und Symptome</h3>
+                                <p class="textInfobutton">Auf den dazugehörigen Seiten findest du die 
+                                    wichtigsten Verhaltenstipps und Symptome einer Infektion 
+                                    zusammengefasst. Falls du glaubst infiziert zu sein, findest du 
+                                    hier ebenfalls weiterführende Informationen.</p>
+                            </div>
+                            <div class="flexboxwiebild">
+                                <img alt="Niesen in Armbeuge" src="img/sneeze.png" width="80vw" height="80vw">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <script src="cordova.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/info.js"></script>
+
+</div>
+</body>
+</html>

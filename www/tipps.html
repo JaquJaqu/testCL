@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="img/Logo_CovidLux.png">
+        <title>CovidLux</title>
+        <script src="js/jquery.min.js"></script> 
+    </head>
+    <body ononline="onOnline()" onoffline="onOffline()">
+<div id="scrollbar">
+<header>  
+    <div class="flex_menu">
+    <div class="info">
+        <a href="info.html" onclick="saveHistory()"><img alt="Informationen" src="img/info.png" width="25vw" height="25vw"></a>
+    </div>
+    <h1>Tipps</h1>
+    <div class="einstellungen">
+        <a href="einstellungen.html" onclick="saveHistory()"><img alt="Einstellungen" src="img/settings.png" width="25vw" height="25vw"></a>
+    </div> 
+</div>
+</header>
+
+<div class="ro"><img src="img/rechts_oben.png" width="175vh"></div>
+        <div class="lu"><img src="img/links_unten.png" width="175vh"></div>
+
+<div id="unterstatus"></div>
+<div id="status"></div>
+     
+     <div id="mainwrapper_tipps">
+        <h1 id="header_tipps">Verhaltenstipps</h1>
+        <p id="sub_tipps">so schützt du dich und deine Mitmenschen</p>
+        
+        <div class="panel_tipps_start">
+            <img src="img/washing-hands.png" alt="Hände waschen" width="100vw" height="100vh">
+            <p>Regelmäßig Hände mit Seife oder alkoholhaltigem Desinfektionsmittel waschen
+            </p>
+        </div>
+
+        <div class="panel_tipps_links">
+            <p>Gesicht - vor allem Mund - Augen und Nase
+                nicht mit den Fingern berühren
+            </p>
+            <img src="img/eyes.png" alt="Auge mit Virus" width="100vw" height="100vh">
+        </div>
+
+        <div class="panel_tipps_rechts">
+            <img src="img/shake.png" alt="Alternativer Händedruck mit Füßen" width="100vw" height="100vh">
+            <p>Händeschütteln und Umarmungen vermeiden
+            </p>
+        </div>
+
+        <div class="panel_tipps_links">
+            <p>In Armbeugen oder Taschentuch niesen, Taschentuch entsorgen
+            </p>
+            <img src="img/sneeze.png" alt="Niesen in Armbeuge" width="100vw" height="100vh">
+        </div>
+
+        <div class="panel_tipps_rechts">
+            <img src="img/distance.png" alt="Abstand zwischen 2 Personen" width="100vw" height="100vh">
+            <p>1 bis 2 Meter Abstand halten
+            </p>
+        </div>
+
+        <div class="panel_tipps_links">
+            <p>Räume regelmäßig lüften
+            </p>
+            <img src="img/window.png" alt="Fenster" width="100vw" height="100vh">
+        </div>
+
+        <div class="panel_tipps_rechts">
+            <img src="img/quarantine.png" alt="Quarantäne" width="100vw" height="100vh">
+            <p>Bei Anzeichen von Krankheit zuhause bleiben
+            </p>
+        </div>
+
+        <div class="panel_tipps_links">
+            <p>Falls nötig Mund-Nasen-Schutz tragen
+            </p>
+            <img src="img/face-mask (2).png" alt="Mund-Nasen-Schutz" width="100vw" height="100vh">
+        </div>
+
+        <div class="panel_weitere_tipps">
+            <h3>Weitere bundesweite Maßnahmen findest du 
+                auf der Seite des Bundesministeriums unter
+            </h3>
+            <a href="https://www.sozialministerium.at/Informationen-zum-Coronavirus.html" target="_blank">www.sozialministerium.at/Informationen-zum-Coronavirus</a>
+        </div>
+    
+    </div>
+    
+
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <div class="nav_element">
+                        <a href="start.html" class="nav_element"><img alt="Start" src="img/home_grau.svg" width="30vw" height="30vw">Start</a>
+                       </div>                 
+                   </li>
+                   <li>
+                       <div class="nav_element">
+                        <a href="dashboard_bezirk.html" class="nav_element"><img alt="Zahlen" src="img/statistics_grau.svg" width="30vw" height="30vw">Zahlen</a>
+                       </div>
+                   </li>
+                   <li>
+                       <div class="nav_element">
+                        <div id="RectTipps"></div>
+                        <a href="tipps.html" class="nav_element"><img alt="Tipps" src="img/maske_blau.svg" width="30vw" height="30vw"><span class="aktiv">Tipps</span></a>
+                       </div>
+                   </li>
+                   <li>
+                       <div class="nav_element">
+                        <a href="symptome.html" class="nav_element"><img alt="Symptome" src="img/fieber_grau.svg" width="30vw" height="30vw">Symptome</a>
+                       </div>
+                  
+               </li>
+            </ul>
+        </nav>
+     </footer>
+
+
+        <script src="cordova.js"></script>
+        <script src="js/functions.js"></script>
+       
+    </div>
+    </body>
+</html>

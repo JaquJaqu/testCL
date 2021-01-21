@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="img/Logo_CovidLux.png">
+        <title>CovidLux</title>   
+        <script src="js/jquery.min.js"></script> 
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js'></script> 
+        <script src="js/databasefinal.js"></script>
+        
+       
+         
+    </head>
+    <body onload="onload_start()" ononline="onOnline()" onoffline="onOffline()"> 
+
+        <div id="scrollbar">
+
+        <header>
+            <div class="flex_menu">
+            <div class="info">
+                <a href="info.html" onclick="saveHistory()"><img alt="Informationen" src="img/info.png" width="25vw" height="25vw"></a>
+            </div>
+            <div></div>
+            <div class="einstellungen">
+                <a href="einstellungen.html" onclick="saveHistory()"><img alt="Einstellungen" src="img/settings.png" width="25vw" height="25vw"></a>
+            </div> 
+        </div>
+        </header>
+
+        <div class="ro"><img src="img/rechts_oben.png" width="175vh"></div>
+        <div class="lu"><img src="img/links_unten.png" width="175vh"></div>
+
+        <div id="unterstatus"></div>
+        <div id="status"></div>
+        <div id="loader_class">
+            <div id="loader"></div>
+            <h2 id="dataLoader">Die Daten werden geladen...</h2>
+        </div>
+            
+            <div id="mainwrapper_start">
+
+                    <p id="letzte_ampel"></p>
+                    <p id="letzte_pos_faelle"></p>
+                
+                
+                            <div class="dropdown" display="block">
+                                <button onclick="myFunction()" class="dropbtn" id="dropbtn">anderen Bezirk wählen</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                <input type="text" placeholder="Suchen.." id="myInput" onkeyup="filterFunction('myInput','myDropdown')">
+                            </div>
+                            </div>
+
+                <h2 id ="infoText">Es wird kein Bezirk angezeigt</h2>
+                <h1 id="bezirk">Bezirk</h1>
+                <h2 id="standortText">Standort</h2>
+                <div id="farbkreisAktiv" onclick="location.href='dashboard_bezirk.html'"></div>
+                <h2 id="value_pos" onclick="location.href='dashboard_bezirk.html'"></h2>
+                <h3 id="positiveFaelle" onclick="location.href='dashboard_bezirk.html'">positive Fälle</h3>
+
+                <div id="farbkreisPH" role="img" aria-label="Ampelfarbe des ausgewählten Bezirks"></div> 
+                
+                <div id="ringerl"></div>
+                <div class = "farbkreiseklein" id="farbkreisgreen" role="img" aria-label="Ampelfarbe Grün"></div>
+                <div class = "farbkreiseklein" id="farbkreisyellow" role="img" aria-label="Ampelfarbe Gelb"></div>
+                <div class = "farbkreiseklein" id="farbkreisorange" role="img" aria-label="Ampelfarbe Orange"></div>
+                <div class = "farbkreiseklein" id="farbkreisred" role="img" aria-label="Ampelfarbe Rot"></div>
+            
+            <h1 id="WarnstufeGeschrieben"></h1>
+            <h2 id="info_start">Aktiviere den Zugriff auf deinen Standort oder wähle einen Bezirk aus der Liste</h2>
+
+            <div id="Standortbox">
+                <h3>Standort</h3>
+                <label class="switch">
+                    <input type="checkbox" onclick="myLocation()" checked ='true' id='switchValue'  name="disableLocation" title="Standort">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+                
+        </div>
+
+            
+            <footer>
+                <nav aria-label="Navigation">
+                    <ul>
+                        <li>
+                            <div class="nav_element" role="img" aria-label="Start">
+                                <div id="RectStart"></div>
+                                <a href="start.html" class="nav_element"><img alt="Start" src="img/home_blau.svg" width="30vw" height="30vw"><span class="aktiv">Start</span></a>
+                               </div>                 
+                           </li>
+                           <li>
+                               <div class="nav_element" role="img" aria-label="Zahlen">
+                                <a href="dashboard_bezirk.html" class="nav_element"><img alt="Zahlen" src="img/statistics_grau.svg" width="30vw" height="30vw">Zahlen</a>
+                               </div>
+                           </li>
+                           <li>
+                               <div class="nav_element" role="img" aria-label="Tipps">
+                                <a href="tipps.html" class="nav_element"><img alt="Tipps" src="img/maske_grau.svg" width="30vw" height="30vw">Tipps</a>
+                               </div>
+                           </li>
+                           <li>
+                               <div class="nav_element" role="img" aria-label="Symptome">
+                                <a href="symptome.html" class="nav_element"><img alt="Symptome" src="img/fieber_grau.svg" width="30vw" height="30vw">Symptome</a>
+                               </div>
+                        
+                    </li>
+                    </ul>
+                </nav>
+            </footer>
+
+
+        <script src="cordova.js"></script>
+        <script src="js/functions.js"></script>
+        
+        <script src="js/standort.js"></script>
+        
+         <!-- <script src = "js/databasefunkt.js"></script>  -->
+        
+       
+        </div>
+    </body>
+</html>

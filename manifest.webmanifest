@@ -1,0 +1,14 @@
+{
+    "background_color": "#FFF",
+    "display": "standalone",
+    "name": "CovidLux",
+    "short_name": "CovidLux",
+    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "author": "Apache Cordova Team",
+    "start_url": "index.html",
+    "icons": [{
+      "src": "./www/img/Logo_CovidLux.png",
+      "sizes": "2887x2887",
+      "type": "image/png"
+    }]
+}

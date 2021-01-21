@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/Logo_CovidLux.png">
+    <title>CovidLux</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-fetch.v2.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js'></script>
+    <script src="js/jquery.min.js"></script>
+
+</head>
+
+<body onload="onload_bundesland()" ononline="onOnline()" onoffline="onOffline()">
+
+    <div id="scrollbar">
+
+        <header>
+            <div class="flex_menu">
+                <div class="info">
+                    <a href="info.html" onclick="saveHistory()"><img alt="Informationen" src="img/info.png" width="25vw"
+                            height="25vw"></a>
+                </div>
+                <h1>Zahlen</h1>
+                <div class="einstellungen">
+                    <a href="einstellungen.html" onclick="saveHistory()"><img alt="Einstellungen" src="img/settings.png"
+                            width="25vw" height="25vw"></a>
+                </div>
+            </div>
+        </header>
+
+        <div id="unterstatus"></div>
+        <div id="status"></div>
+        <div id="unterinfo" onclick="info_close()"></div>
+        <div id="info_dash"></div>
+        <div class="wrapper_dash">
+            <nav id="Navi">
+                <ul>
+                    <li><a href="dashboard_bezirk.html" class="aktiv_lila">Bezirk</a></li>
+                    <li><a href="dashboard_bundesland.html" class="aktiv_small">Bundesland</a></li>
+                    <li><a href="dashboard_österreich.html" class="aktiv_lila">Österreich</a></li>
+                </ul>
+            </nav>
+
+            <div class="mainwrapper_dash">
+                <!--<div class="dropdown_dash" display="block">
+                        <button onclick="myFunction_bundesland()" class="dropbtn" id="dropbtn_bundesland">Bundesland auswählen</button>
+                        <div id="myDropdown_bundesland" class="dropdown-content-dash">
+                    </div>
+                    </div>-->
+                <h1 id="dash_bundesland_name"></h1>
+
+                <p class="letzte_zahlen">Letzte Aktualisierung: Datum.Mustermonat</p>
+
+                <!-- <div class="Akkordeon_dash">
+                        <button class="accordion">Aktive Fälle <img src="./img/fragezeichen_gray.png" class="info_dash_button" onclick="info_aktiveFälle()"></button>
+                        <div class="verlauf"></div>
+                        <div class="panel">
+                            <div class="panel_dash">
+                                <h2>Schwere Symptome</h2>
+                                <button class="slmm" onclick="info_area()">So liest man mich</button>
+                            </div>
+                        </div> -->
+
+                <button class="accordion">Neuerkrankungen <img src="./img/fragezeichen_gray.png" class="info_dash_button" onclick="info_Neuerkrankungen()"></button>
+                <div id="hfBL_Neuerk" class="verlauf"></div>
+                <div class="panel">
+                    <div id="ACBL_Neuerk" class="panel_dash"></div>
+                </div>
+
+                <button class="accordion">Todesfälle <img src="./img/fragezeichen_gray.png" class="info_dash_button" onclick="info_Todesfälle()"></button>
+                <div id="hfBL_TT" class="verlauf"></div>
+                <div class="panel">
+                    <div id="ACBL_TT" class="panel_dash"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <div class="nav_element">
+                        <a href="start.html" class="nav_element"><img alt="Start" src="img/home_grau.svg" width="30vw"
+                                height="30vw">Start</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav_element">
+                        <div id="RectDashboard"></div>
+                        <a href="dashboard_bezirk.html" class="nav_element"><img alt="Zahlen"
+                                src="img/statistics_blau.svg" width="30vw" height="30vw"><span
+                                class="aktiv">Zahlen</span></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav_element">
+                        <a href="tipps.html" class="nav_element"><img alt="Tipps" src="img/maske_grau.svg" width="30vw"
+                                height="30vw">Tipps</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav_element">
+                        <a href="symptome.html" class="nav_element"><img alt="Symptome" src="img/fieber_grau.svg"
+                                width="30vw" height="30vw">Symptome</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script src="cordova.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/functions_dash.js"></script>
+    <script src="js/DashboardData.js"></script>
+    <script src="js/charts.js"></script>
+    <!-- <script src="js/chartAuslastung.js"></script> -->
+    <script src="js/dashboard_bundesland.js"></script>
+    <script src="js/standort.js"></script>
+
+
+    </div>
+</body>
+
+</html>

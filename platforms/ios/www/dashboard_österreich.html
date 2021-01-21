@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="img/Logo_CovidLux.png">
+        <title>CovidLux</title>
+        <script type = "text/javascript" src = "https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-fetch.v2.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js'></script>
+        <script src="js/jquery.min.js"></script> 
+    </head>
+    <body ononline="onOnline()" onoffline="onOffline()">
+
+<header>
+    <div class="info">
+        <a href="info.html" onclick="saveHistory()"><img alt="Info" src="img/info.png" width="25vw" height="25vw"></a>
+    </div>
+    <h1>Zahlen</h1>
+    <div class="einstellungen">
+        <a href="einstellungen.html" onclick="saveHistory()"><img alt="Einstellungen" src="img/settings.png" width="25vw" height="25vw"></a>
+    </div> 
+</header>
+
+<div id="unterstatus"></div>
+<div id="status"></div>
+<div id="unterinfo" onclick="info_close()"></div>
+<div id="info_dash"></div>
+    <div class="wrapper_dash">
+        <nav id="Navi">
+            <ul>
+                <li><a href="dashboard_bezirk.html" class="aktiv_lila">Bezirk</a></li>
+                <li><a href="dashboard_bundesland.html" class="aktiv_lila">Bundesland</a></li>
+                <li><a href="dashboard_österreich.html"class="aktiv_small">Österreich</a></li>
+            </ul>
+        </nav>
+
+        
+        <div class ="mainwrapper_dash">
+        <h1 id="Österreich">Österreich</h1>
+        <div class="Akkordeon_dash">
+            <button class="accordion">Aktive Fälle <img src="./img/pfeil_lila.png" class="info_dash_button" onclick="info_aktiveFälle()"></button>
+            <div class="verlauf"></div>
+            <div class="panel">
+                <div class="panel_links">
+                    <h2>Schwere Symptome</h2>
+                </div>
+                <div class="panel_rechts">
+                </div>
+            </div>
+            
+            <button class="accordion">Neuerkrankungen <img src="./img/pfeil_lila.png" class="info_dash_button" onclick="info_Neuerkrankungen()"></button>
+            <div class="verlauf"></div>
+            <div class="panel">
+                <div class="panel_links">
+                    <h2>Schwere Symptome</h2>
+                </div>
+                <div class="panel_rechts">
+                </div>
+            </div>
+            
+            <button class="accordion">Todesfälle <img src="./img/pfeil_lila.png" class="info_dash_button" onclick="info_Todesfälle()"></button>
+            <div class="verlauf"></div>
+            <div class="panel">
+                <div class="panel_links">
+                    <h2>Schwere Symptome</h2>
+                </div>
+                <div class="panel_rechts">
+                </div>
+            </div>   
+        </div>
+        
+    </div>   
+    </div>
+
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                   <div class="nav_element">
+                   <a href="start.html"><img alt="Start" src="img/home_grau.svg" width="30vw" height="30vw"></a>    
+                   <a href="start.html">Start</a>
+                   </div>                 
+               </li>
+               <li>
+                   <div class="nav_element">
+                    <div id="RectDashboard"></div>
+                   <a href="dashboard_bezirk.html"><img alt="Zahlen" src="img/statistics_blau.svg" width="30vw" height="30vw"></a>
+                   <a href="dashboard_bezirk.html" class="aktiv">Zahlen</a>
+                   </div>
+               </li>
+               <li>
+                   <div class="nav_element">
+                   <a href="tipps.html"><img alt="Tipps" src="img/maske_grau.svg" width="30vw" height="30vw"></a>
+                   <a href="tipps.html">Tipps</a>
+                   </div>
+               </li>
+               <li>
+                   <div class="nav_element">
+                   <a href="symptome.html"><img alt="Symptome" src="img/fieber_grau.svg" width="30vw" height="30vw"></a>
+                   <a href="symptome.html">Symptome</a>
+                   </div>
+               </li>
+            </ul>
+        </nav>
+     </footer>
+
+
+        <script src="cordova.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/functions_dash.js"></script>
+        <script src="js/dashboard_österreich.js"></script>
+        <!--<script src="js/dashboarddata.js"></script>-->
+       
+        
+    </body>
+</html>

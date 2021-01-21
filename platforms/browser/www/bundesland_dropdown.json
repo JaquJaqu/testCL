@@ -1,0 +1,386 @@
+[
+  {
+"Bezirke": [
+    {
+      "Bundesland": "Burgenland",
+      "Bezirk": "Eisenstadt(Stadt)"
+    },
+    {
+      "Bundesland": "Burgenland",
+      "Bezirk": "Eisenstadt-Umgebung"
+    },
+    {
+      "Bundesland": "Burgenland",
+      "Bezirk": "Güssing"
+    },
+    {
+      "Bundesland": "Burgenland",
+      "Bezirk": "Jennersdorf"
+    },
+    {
+      "Bundesland": "Burgenland",
+      "Bezirk": "Mattersburg"
+    },
+    {
+      "Bundesland": "Burgenland",
+      "Bezirk": "Neusiedl am See"
+    },
+    {
+      "Bundesland": "Burgenland",
+      "Bezirk": "Oberpullendorf"
+    },
+    {
+      "Bundesland": "Burgenland",
+      "Bezirk": "Oberwart"
+    },
+    {
+      "Bundesland": "Burgenland",
+      "Bezirk": "Rust(Stadt)"
+    },
+    {
+      "Bundesland": "Kärnten",
+      "Bezirk": "Feldkirchen"
+    },
+    {
+      "Bundesland": "Kärnten",
+      "Bezirk": "Hermagor"
+    },
+    {
+      "Bundesland": "Kärnten",
+      "Bezirk": "Klagenfurt Stadt"
+    },
+    {
+      "Bundesland": "Kärnten",
+      "Bezirk": "Klagenfurt Land"
+    },
+    {
+      "Bundesland": "Kärnten",
+      "Bezirk": "Sankt Veit an der Glan"
+    },
+    {
+      "Bundesland": "Kärnten",
+      "Bezirk": "Spittal an der Drau"
+    },
+    {
+      "Bundesland": "Kärnten",
+      "Bezirk": "Villach Stadt"
+    },
+    {
+      "Bundesland": "Kärnten",
+      "Bezirk": "Villach Land"
+    },
+    {
+      "Bundesland": "Kärnten",
+      "Bezirk": "Völkermarkt"
+    },
+    {
+      "Bundesland": "Kärnten",
+      "Bezirk": "Wolfsberg"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Amstetten"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Baden"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Bruck an der Leitha"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Gänserndorf"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Gmünd"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Hollabrunn"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Horn"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Korneuburg"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Krems an der Donau(Stadt)"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Krems(Land)"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Lilienfeld"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Melk"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Mistelbach"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Mödling"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Neunkirchen"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Sankt Pölten(Stadt)"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Sankt Pölten(Land)"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Scheibbs"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Tulln"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Waidhofen an der Thaya"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Waidhofen an der Ybbs(Stadt)"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Wiener Neustadt(Stadt)"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Wiener Neustadt(Land)"
+    },
+    {
+      "Bundesland": "Niederösterreich",
+      "Bezirk": "Zwettl"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Braunau am Inn"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Eferding"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Freistadt"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Gmunden"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Grieskirchen"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Kirchdorf an der Krems"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Linz(Stadt)"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Linz-Land"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Perg"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Ried im Innkreis"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Rohrbach"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Schärding"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Steyr(Stadt)"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Steyr-Land"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Urfahr-Umgebung"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Vöcklabruck"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Wels(Stadt)"
+    },
+    {
+      "Bundesland": "Oberösterreich",
+      "Bezirk": "Wels-Land"
+    },
+    {
+      "Bundesland": "Salzburg",
+      "Bezirk": "Hallein"
+    },
+    {
+      "Bundesland": "Salzburg",
+      "Bezirk": "Salzburg(Stadt)"
+    },
+    {
+      "Bundesland": "Salzburg",
+      "Bezirk": "Salzburg-Umgebung"
+    },
+    {
+      "Bundesland": "Salzburg",
+      "Bezirk": "Sankt Johann im Pongau"
+    },
+    {
+      "Bundesland": "Salzburg",
+      "Bezirk": "Tamsweg"
+    },
+    {
+      "Bundesland": "Salzburg",
+      "Bezirk": "Zell am See"
+    },
+    {
+      "Bundesland": "Steiermark",
+      "Bezirk": "Bruck-Mürzzuschlag"
+    },
+    {
+      "Bundesland": "Steiermark",
+      "Bezirk": "Deutschlandsberg"
+    },
+    {
+      "Bundesland": "Steiermark",
+      "Bezirk": "Graz(Stadt)"
+    },
+    {
+      "Bundesland": "Steiermark",
+      "Bezirk": "Graz-Umgebung"
+    },
+    {
+      "Bundesland": "Steiermark",
+      "Bezirk": "Gröbming"
+    },
+    {
+      "Bundesland": "Steiermark",
+      "Bezirk": "Hartberg-Fürstenfeld"
+    },
+    {
+      "Bundesland": "Steiermark",
+      "Bezirk": "Leibnitz"
+    },
+    {
+      "Bundesland": "Steiermark",
+      "Bezirk": "Leoben"
+    },
+    {
+      "Bundesland": "Steiermark",
+      "Bezirk": "Liezen"
+    },
+    {
+      "Bundesland": "Steiermark",
+      "Bezirk": "Murau"
+    },
+    {
+      "Bundesland": "Steiermark",
+      "Bezirk": "Murtal"
+    },
+    {
+      "Bundesland": "Steiermark",
+      "Bezirk": "Südoststeiermark"
+    },
+    {
+      "Bundesland": "Steiermark",
+      "Bezirk": "Voitsberg"
+    },
+    {
+      "Bundesland": "Steiermark",
+      "Bezirk": "Weiz"
+    },
+    {
+      "Bundesland": "Tirol",
+      "Bezirk": "Imst"
+    },
+    {
+      "Bundesland": "Tirol",
+      "Bezirk": "Innsbruck-Stadt"
+    },
+    {
+      "Bundesland": "Tirol",
+      "Bezirk": "Innsbruck-Land"
+    },
+    {
+      "Bundesland": "Tirol",
+      "Bezirk": "Kitzbühel"
+    },
+    {
+      "Bundesland": "Tirol",
+      "Bezirk": "Kufstein"
+    },
+    {
+      "Bundesland": "Tirol",
+      "Bezirk": "Landeck"
+    },
+    {
+      "Bundesland": "Tirol",
+      "Bezirk": "Lienz"
+    },
+    {
+      "Bundesland": "Tirol",
+      "Bezirk": "Reutte"
+    },
+    {
+      "Bundesland": "Tirol",
+      "Bezirk": "Schwaz"
+    },
+    {
+      "Bundesland": "Vorarlberg",
+      "Bezirk": "Bludenz"
+    },
+    {
+      "Bundesland": "Vorarlberg",
+      "Bezirk": "Bregenz"
+    },
+    {
+      "Bundesland": "Vorarlberg",
+      "Bezirk": "Dornbirn"
+    },
+    {
+      "Bundesland": "Vorarlberg",
+      "Bezirk": "Feldkirch"
+    },
+    {
+      "Bundesland": "Wien",
+      "Bezirk": "Wien"
+    }
+   ]
+  }
+]

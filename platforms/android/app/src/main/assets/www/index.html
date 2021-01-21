@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="img/Logo_CovidLux.png">
+        <title>CovidLux</title>
+        <script src="js/jquery.min.js"></script>     
+    </head>
+    <body onload="onload_walk()"> 
+
+        <div id="scrollbar">
+
+        <div class="walk_wrapper">
+        <img src="img/1.png" id="walk_welle">
+        <h2 id="walk_h2">Wie funktioniert es?</h2>
+ 
+
+       
+                   <div id=splash>
+                       <div id=splash_inner>
+                           <img src="img/wellen oben ohne viren.png" class="wellen_oben">
+                           <img src="img/wellen oben viren.png" id="wellen_oben_viren" class="wellen_oben">
+                            <img src="img/Logo_CovidLux.png" id="logo_covidlux" alt="CovidLux" width="150vw" height="150vh">   
+                            <h1 id="covidlux_text">COVID LUX</h1>
+                            <img src="img/wellen unten ohne viren.png" class="wellen_unten">
+                            <img src="img/wellen unten viren.png" id="wellen_unten_viren" class="wellen_unten">
+                         </div>
+                    </div>
+                    <h2 class="walk_header">aktuelle Ampelfarbe</h2>
+                    <p class="walk_erklärung_index">auf der Startseite findest du die aktuelle Ampelfarbe
+                        basierend auf deinem Standort. Außerdem hast du die Möglichkeit dir 
+                        die Ampelfarben anderer Bezirke anzeigen zu lassen.
+                    </p>
+
+                </div>
+    
+    <footer class="footer_walk">
+        <nav>
+            <div id="walk_kreise_start">
+                <div class="walk_kreis_aktiv"></div>
+                <div class="walk_kreis"></div>
+                <div class="walk_kreis"></div>
+             <a href="walk2.html"><button class="walk_button_rechts" onclick="storeSplash()">Weiter</button></a>
+            </div>
+        </nav>
+     </footer>
+
+
+        <script src="cordova.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/index.js"></script>
+        <!--<script src="js/dashboarddata.js"></script>-->
+        </div>
+    </body>
+</html>
+

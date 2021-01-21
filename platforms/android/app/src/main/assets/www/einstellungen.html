@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="img/Logo_CovidLux.png">
+        <title>CovidLux</title>
+        <script src="js/jquery.min.js"></script>         
+    </head>
+    <body onload="onload_einstellungen()" ononline="onOnline()" onoffline="onOffline()">
+
+        <div id="scrollbar">
+
+        <header>
+            <div class="info">
+                <a id="back1"><img alt="Back" src="img/back.png" width="25vw" height="25vw"></a>
+                </div>
+            <h1>Einstellungen</h1>
+        <div></div>
+        </header>
+
+            <div id="unterstatus"></div>
+            <div id="status"></div>
+            <div id="mainwrapper_einstellungen">
+                <div id="einstellungen">
+                    <div class="einstellungen_header">
+                        <img alt="Ampel" src="img/lock.png" width="20vw" height="20vw">
+                        <h2>Berechtigungen</h2>
+                        <div id="raumfueller1"></div>
+                    </div>
+                    <div class="einstellungen_content">
+                        <div id="einstellungen_standorttext">
+                        <h3>Standort</h3>
+                        <p>Ihre aktuelle Position wird verwendet, um Ihnen alle relevanten Daten für ihren
+                            derzeitigen Aufenthaltspunkt anzuzeigen</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" onclick="checkToggle()"  checked ='true' id='switchValue_setting'  name="disableLocation">
+                            <span class="slider round"></span>
+                        </label>        
+                    </div>
+
+
+                    
+                    <div class="einstellungen_header">
+                        <img alt="Ampel" src="img/secure.png" width="20vw" height="20vw">
+                        <h2>Datenschutz</h2>
+                        <div id="raumfueller2"></div>
+                    </div>
+                    <div class="einstellungen_content">
+                        <button class="einstellungen_buttons">Datenschutzerklärung</button>
+                    </div>
+
+                    
+                    <div class="einstellungen_header">
+                        <img alt="Ampel" src="img/external_link.png" width="20vw" height="20vw">
+                        <h2>Mehr</h2>
+                        <div id="raumfueller3"></div>
+                    </div>
+                    <div class="einstellungen_content">
+                        <button class="einstellungen_buttons">Impressum</button>
+                    </div>
+                    <div class="einstellungen_content" id="Link">
+                        <button class="einstellungen_buttons">Weiterführende Links</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        <script src="cordova.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/einstellungen.js"></script>
+        <!--<script src="js/dashboarddata.js"></script>-->
+
+</div>
+</body>
+</html>

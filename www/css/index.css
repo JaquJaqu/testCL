@@ -1,5 +1,5 @@
 .accordion:focus {
-    outline: 2px solid #000000;
+    outline: 1px solid #000000;
     padding: 18px;
     /* padding-left: 3.5vw; */
     /* transition: 0.4s; */
@@ -8,7 +8,7 @@
 }
 
 *:focus {
-    outline: 2px solid #000000;
+    outline: 1px solid #000000;
 }
 
 
@@ -180,7 +180,7 @@ footer *{
 footer ul {
     width: 100%;  
     display:flex; 
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .nav_element{
     display: flex;
@@ -937,7 +937,7 @@ top: 14px;
     font-size: 14pt; 
     font-weight: 500;
     width: 97.5vw;
-    height: 250px;
+    height: 270px;
     margin-top: 30vh;
     padding-left: 8%;
     padding-right: 8%;
@@ -964,7 +964,8 @@ top: 14px;
     text-align: center;
     background-color: none;
     border: none;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
+    padding-top: 2%;
 }
 .letzte_zahlen{
     text-align: center;
@@ -979,6 +980,10 @@ top: 14px;
 }
 .Akkordeon_dash > button{
     line-height: 4vh;
+}
+.flex_panel{
+    display:flex;
+    flex-direction: column;
 }
 /************************************************__TIPPS__********************************/
 #mainwrapper_tipps{
@@ -1539,7 +1544,7 @@ h3{
         /* grid-template-columns: 10vw 30vw 1.5vw 1.5vw 1.5vw 1.5vw 30vw 10vw; */
         /* grid-template-columns: 10vw 10vw 6vw 2vw 2vw 2vw 2vw 6vw 10vw 10vw; */
         grid-template-columns: 10% 10% 6% 2% 2% 2% 2% 6% 10% 10%;
-        grid-template-rows: 10vh 7vh 8vh 6vh 6vh 9vh 1.5vh 0.5vh 11vh 10vh;
+        grid-template-rows: 10vh 8vh 8vh 6vh 6vh 9vh 1.5vh 0.5vh 11vh 10vh;
         /* grid-template-rows: 10vh 8vh 10vh 12vh 12vh 1.5vh 1.5vh 12vh 10vh; */
     }
     #letzte_ampel, #letzte_pos_faelle{
@@ -1680,10 +1685,9 @@ h3{
     .ro{
         position: fixed;
         top: 12vh;
-        right: 0.5vw;
+        right: 1vw;
         text-align: end;
         display:block;
-        z-index: 2;
     }
     .ro img{
         width: 25vmin;
@@ -1878,6 +1882,9 @@ h3{
     }
     #DataSymptome{
         font-size: 2.5vmin;
+    }
+    .number{
+        font-size: unset;
     }
     #stand_who{
         font-size: 2.1vmin;

@@ -734,9 +734,6 @@ function myLocation() {
        document.getElementById("standortText").innerHTML = "zuletzt verwendeter Standort";
       getAmpel();
 
-      
-
-
     }
       
     // if(lokalstorageBezirk != null){

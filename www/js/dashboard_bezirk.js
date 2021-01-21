@@ -9,7 +9,7 @@ let meineDatenATSBez = [];
 let meineDatenAAFBez = [];
 
 
-getAkkordeon_dash();
+//getAkkordeon_dash();
 databaseBez();
 
 //_________DB STUFF_____________________________________

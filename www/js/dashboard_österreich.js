@@ -21,8 +21,8 @@ function getAreacharts(){
     
     drawAreaChart('#AC_Neuerk', data, d => dateParser(d.datum), d => d.AnzahlFaelle, 9500); 
     drawAreaChart('#AC_TT', data, d => dateParser(d.datum), d => d.AnzahlTotTaeglich, 150); 
-    drawAuslastung(1);
-    drawAuslastungHF(1);
+    // drawAuslastung(1);
+    // drawAuslastungHF(1);
 
 }
 

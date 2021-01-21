@@ -35,7 +35,7 @@ let getBundesland;
 var dataset;
 
 
-downloadFile(path);
+downloadFileAusl(path);
 
 //dataset = results.data;
 //yourMainCode(remoteData);
@@ -43,7 +43,7 @@ downloadFile(path);
 
 
 //MainCode
-function yourMainCode(remoteDataAusl) {
+function yourMainCodeAusl(remoteDataAusl) {
 
     read_from_local_storage();
     //console.log("Array Example:", getMeldedat);
@@ -534,13 +534,14 @@ function yourMainCode(remoteDataAusl) {
     drawAuslastung(1);
     drawAuslastungHF(1);
 
+    // console.log("1 anzeigen")
 
 
 }
 
 
 //_______Funktionen________________________________________
-function downloadFile(path) {
+function downloadFileAusl(path) {
     if (pathbool == true) {
         Papa.parse(path, {
             download: true,
@@ -551,7 +552,8 @@ function downloadFile(path) {
 
                 //console.log("Results ", results.data); 
                 dataset = results.data;
-                yourMainCode(results.data);
+                yourMainCodeAusl(results.data);
+                // console.log("2 anzeigen")
                 // console.log("TEST 1 :", dataset);
                 return dataset;
             },
@@ -568,7 +570,7 @@ function read_from_local_storage() {
         //accessBool = false; 
         items = JSON.parse(items_json); //mit Speicherdatum 
         //dataOffline = JSON.parse(items.items_json);
-        dataOffline = items.items_json; //Ohne Speicherdatum 
+        dataOfflineAusl = items.items_json; //Ohne Speicherdatum 
         getSpeicherDatumAusl = items.updateDate; //SpeicherDatum
 
         //   console.log("Offline Items:" , items); 
@@ -579,8 +581,9 @@ function read_from_local_storage() {
     } else {
         //accessBool = true; //Wenn es die Daten nicht gibt dann starte den zugriff auf die online-Daten 
         pathbool = true;
-        downloadFile(path);
+        // downloadFileAusl(path);
         //checkForUpdate();
+        console.log("test1")
 
     }
 }
